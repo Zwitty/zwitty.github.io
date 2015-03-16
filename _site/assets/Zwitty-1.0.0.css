@@ -8347,10 +8347,26 @@ aside #recent-comments-section {
     color: #ffffff;
     text-decoration: none;
   }
-  #site-header footer .fa-heart {
-    color: #ff5252;
+  #site-header footer .fa-linkedin {
+    padding-right: 10px;
+  }
+  #site-header footer .fa-linkedin:hover {
+    color: #d50000;
+  }
+  #site-header footer .fa-twitter {
+    padding-right: 10px;
+  }
+  #site-header footer .fa-twitter:hover {
+    color: #d50000;
+  }
+  #site-header footer .fa-github {
+    padding-right: 10px;
+  }
+  #site-header footer .fa-github:hover {
+    color: #d50000;
   }
   #site-header footer ul {
+    list-style-type: none;
     display: none;
     margin-bottom: 0;
   }
