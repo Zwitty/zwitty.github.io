@@ -1,71 +1,134 @@
 ---
-layout: default
+layout: resume
 ---
 
-<section id="posts">
+<center>
+	<h1>Matthew Clark</h1>
+	<p>Whitby, Ontario, Canada
+	<br>
+	<i class="fa fa-phone"></i> 905 809 5388
+	<br>
+	<a href="mailto:matthew@matthewclark.ca">matthew@matthewclark.ca</a></p>
+</center>
 
-  {% for post in paginator.posts %}
+<hr>
+<h2>Education</h2>
+<span class="title">University of Ontario Institute of Technology</span>
+<span class="date">2010 - Present</span>
+<br>
+<ul>	
+	<li>	
+		B.Sc., Computer Science Co-Operative Education</span>
+	</li>
+</ul>
 
-  <article class="post">
+<hr>
+<h2>Work Experience</h2>
+<span class="title">Microsoft - Student Partner</span>
+<span class="date">Sept 2014 - Present</span>
+<br>
+<ul>
+	<li>Run events demonstrating Microsoft’s latest development software.</li>
+	<li>Promote Microsoft student opportunities on campus, DreamSpark, ImagineCup.</li>
+</ul>
 
-        <h1 class="post-title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h1>
-        <!-- title -->
+<span class="title">Geek Squad – Counter Intelligence Agent</span>
+<span class="date">July 2014 - Present</span>
+<br>
+<ul>
+	<li>Assist customers within the Precinct’s Standard Operating Platform (SOP).</li>
+	<li>Provide initial contact with clients and check in products for service.</li>
+	<li>Perform computer repairs and tuneups.</li>
+	<li>Facilitate in-store sales, upgrades, installations and service.</li>
+</ul>
 
-        <div class="post-meta">
-          <ul class="list-inline">
-            <li>
-                {{ post.date | date: "%B" }}
-                {{ post.date | date: "%d" }},
-                {{ post.date | date: "%Y" }}
-            </li>
-            <li>
-              {% if site.share.disqus %}
-              <a href="{{ site.url }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.path }}"></a>
-              {% endif %}
-            </li>
-          </ul>
-        </div>
-        <!-- meta -->
+<span class="title">RBC - Service Management Analyst - Co-Op</span>
+<span class="date">Jan 2013 - Dec 2013</span>
+<br>
+<ul>
+	<li>Effectively communicate with clients for efficient problem resolution.</li>
+	<li>Created METRICS for our team based on our tickets.</li>
+	<li>Created a METRICS tool in ASP.NET and C# to make it easier to generate reports.</li>
+	<li>Updated frequently asked Questions and Knowledge bases for client and employee reference.</li>
+	<li>Created new processes to reduce steps in service requests.</li>
+	<li>Test new automated tools that will be released to our clients.</li>
+	<li>Presented new ideas and processes to team leaders.</li>
+</ul>
 
-        <section class="post-content">
-          <p>
-          {{ post.excerpt | remove: '<p>' | remove: '.</p>' | append: '[...]' }}
-          </p>
-        </section>
-        <!-- content -->
+<span class="title">RBC - Leo Alpha Mentor</span> 
+<span class="date">Jan 2013 - Aug 2013</span>
+<br>
+<ul>
+	<li>Organize events for current Co-Op students at RBC.</li>
+	<li>Communicate events and opportunities to students at RBC.</li>
+	<li>Answer questions and guides students at RBC.</li>
+</ul>
 
-        {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin %}
-          {% include share.html %}
-        {% endif %}
-        <!-- share -->
+<span class="title">RBC - Technical Service Analyst - Co-Op</span> 
+<span class="date">May 2012 - Aug 2012</span>
+<br>
+<ul>
+	<li>Provide timely, efficient processing of client requests while maintaining the security of the network.</li>
+	<li>Follow established administrative processes, to meet the requirements of customers.</li>
+	<li>Communicate new processes and procedures to customers, to ensure maximum quality service.</li>
+	<li>Identify problems and follow up with team leaders, to ensure quick resolution.</li>
+</ul>
 
-        <div class="post-reading-link">
-          <a href="{{ post.url }}">Continue reading&nbsp;<i class="fa fa-angle-double-right"></i></a>
-        </div>
-        <!-- reading link -->
+<hr>
+<h2>Competitions</h2>
+<ul>
+	<li>RBC Next Great Innovator Challenge Champion 2013.</li>
+	<li>Microsoft Surface Classroom Design Challenge Winner.</li>
+	<li>Participated in the ACM-ICPC 2011 programming contest on the UOIT team.</li>
+</ul>
 
-  </article>
-  <!--post-->
+<hr>
+<h2>Technical Skills</h2>
+<ul>
+	<li>Linux Operating Systems</li>
+	<li>Git</li>
+	<li>Coding Experience With:</li>
+		<ul>
+			<li>C++</li>
+			<li>C#</li>
+			<li>Java</li>
+			<li>ASP.NET</li>
+			<li>VB.NET</li>
+			<li>HTML5</li>
+			<li>JavaScript</li>
+			<li>XAML</li>
+			<li>Android</li>
+			<li>Windows Phone</li>
+		</ul>
+</ul>
 
-  {% endfor %}
+<hr>
+<h2>Interests and Projects</h2>
+<span class="title">Hackathons</span>
+<br>
+<ul>
+	<li>I have participated in many Hackathons over the past few years and would like to continue to participate in them.</li>
+</ul>
 
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" role="button" class="btn btn-primary"><i class="fa fa-angle-double-left"></i>&nbsp;PREVIOUS</a>
-    {% else %}
-    <button type="button" class="btn btn-primary" disabled="disabled"><i class="fa fa-angle-double-left"></i>&nbsp;PREVIOUS</button>
-    {% endif %}
-    <!-- <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" role="button" class="btn btn-primary">NEXT&nbsp;<i class="fa fa-angle-double-right"></i></a>
-    {% else %}
-    <button type="button" class="btn btn-primary" disabled="disabled">NEXT&nbsp;<i class="fa fa-angle-double-right"></i></button>
-    {% endif %}
-  </div>
-  {% endif %}
-  <!-- pagination -->
+<span class="title">Traveling</span>
+<br>
+<ul>
+	<li>I enjoy travelling, over the past few years I have backpacked across Europe and travelled across Japan.</li>
+</ul>
 
-</section>
+<span class="title">Technology</span>
+<br>
+<ul>
+	<li>I am always keeping up to date with the latest technologies, I am very interested in where the field is going as it is constantly changing.</li>
+</ul>
+
+<span class="title">Undergraduate Thesis</span>
+<br>
+<ul>
+	<li>I am currently working on my undergraduate thesis which will allow people to communicate through drawing images.</li>
+</ul>
+<hr>
+
+<center><a href="Matthew_Clark_Resume.pdf" download><i class="fa fa-print"></i> Printer and PDF version</a></center>
+
+<hr>

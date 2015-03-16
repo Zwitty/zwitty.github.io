@@ -1,0 +1,49 @@
+#page-content {
+    #content {
+      margin: 0 auto;
+      max-width: 610px;
+      padding: 0 15px;
+    }
+}
+
+.title {
+	color: @primary-500;
+	float: left;
+}
+
+.date {
+	color: @accent-200;
+	float: right; 
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: @screen-xs-max) {
+  body {
+   font-size: 16px;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width: @screen-md-min ) {
+
+  #page-wrap {
+    padding-left: @header-size;
+    width: 100%;
+  }
+
+  #page-content {
+      margin: 0 auto;
+      max-width: 940px;
+
+      #content {
+        float: left;
+      }
+
+      aside {
+        float: left;
+        max-width: 300px;
+        padding-left: 25px;
+      }
+  }
+}
