@@ -29,15 +29,15 @@ share:
   facebook: true
   google_plus: true
   linkedin: true
-  disqus: false
+  disqus: true
 
 # if share.facebook is true, provide your facebook app id
 facebook_app_id: 1550934121853744
 
 # if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
-#disqus_username: zwitty
-#disqus_api_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#disqus_recent_comments_to_display: 5
+disqus_username: MatthewThoClark
+disqus_api_key: r1Jo5nNACee32bU3xtpCDmwzlr6M9CON8Wx0cKMDPrqGbrLgPgv8TUS6d56xuLlz 
+disqus_recent_comments_to_display: 5
 
 # google analytics ID
 google_analytics_id: UA-58186085-1
