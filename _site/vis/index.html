@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Matthew Clark</title>
+  <meta name="description" content="Thoughts and writings about technology by Matthew Clark.">
+
+  <link rel="stylesheet" href="/assets/Zwitty-1.0.0.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="http://matthewclark.ca/vis/">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-60395816-1', 'auto');
+	ga('send', 'pageview');
+  </script>
+</head>
+
+  
+  <body>
+
+    <header id="site-header">
+
+  <div id="avatar-container">
+
+    <a href="/">
+      <img id="author-picture" src="/assets/images/Clark-Matthew.jpg" class="img-rounded"/>
+    </a>
+
+    <p id="author-name">Matthew Clark</p>
+
+    <p id="author-intro" class="visible-md-block visible-lg-block">Computer Scientist</p>
+
+    <nav>
+
+      <ul id="nav" class="list-inline hidden-md hidden-lg">
+        <li><a href="/">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+	<li><a href="/resume">Résumé</a></li>
+        <li><a href="http://matthewclark.ca/feed.xml" target="_blank">RSS</a></li>
+      </ul>
+
+    </nav>
+    <!-- responsive menu -->
+
+  </div>
+  <!-- avatar -->
+
+  <div id="nav-container" class="visible-md-block visible-lg-block">
+
+    <nav>
+
+      <ul class="list-unstyled">
+	<li><a href="/">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+	<li><a href="/resume">Résumé</a></li>
+        <li><a href="http://matthewclark.ca/feed.xml" target="_blank">RSS</a></li>
+      </ul>
+
+    </nav>
+
+  </div>
+  <!-- menu -->
+
+  <footer class="visible-md-block visible-lg-block">
+			<a href="https://twitter.com/MatthewThoClark"><i class="fa fa-twitter fa-4x"></i></a>
+			<a href="https://www.linkedin.com/in/matthewthoclark"><i class="fa fa-linkedin fa-4x"></i></a>
+			<a href="https://github.com/Zwitty/"><i class="fa fa-github fa-4x"></i></a>
+  </footer>
+  <!-- footer -->
+
+</header>
+
+  <div id="page-wrap">
+  	<div id="page-content">
+		<div id="content">
+	    	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src='js/coffee.js'></script>
+
+<style>
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    } 
+</style>
+
+<div id="chart"></div>
+
+<div onload="init()">
+	<div style="margin:100;">
+		<div style="display: table-cell; width: 100;">
+    		<label for="xdropdown">X: </label><select id="xdropdown">
+      		<option val="sales">sales</option>
+      		<option val="profit">profit</option>
+    		</select>
+  		</div>
+		<div style="display: table-cell; width: 150;">
+			<label for="ydropdown">Y: </label><select id="ydropdown">
+				<option val="region">region</option>
+				<option val="category">category</option>
+			</select>
+		</div>
+		<div style="display: table-cell; width: 150;">
+			<button id="update" onclick="updateClicked()">Update</button>
+		</div>
+	</div>
+</div>
+
+<div id="vis"></div>
+
+<script type="text/javascript">
+	 d3.select("#chart").append("p")
+		 .text("Hello, world!");
+</script>
+
+
+		</div>
+	</div>
+  </div>
+  
+    
+    <script src="/assets/Zwitty-1.0.0.js"></script>
+    
+
+
+
+    </script>
+
+  </body>
+
+</html>
