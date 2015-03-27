@@ -82,46 +82,14 @@
   	<div id="page-content">
 		<div id="content">
 	    	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src='js/coffee.js'></script>
-
-<style>
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: #000;
-      shape-rendering: crispEdges;
-    } 
-</style>
-
+<script src="js/schools.js"></script>
 <div id="chart"></div>
-
-<div onload="init()">
-	<div style="margin:100;">
-		<div style="display: table-cell; width: 100;">
-    		<label for="xdropdown">X: </label><select id="xdropdown">
-      		<option val="sales">sales</option>
-      		<option val="profit">profit</option>
-    		</select>
-  		</div>
-		<div style="display: table-cell; width: 150;">
-			<label for="ydropdown">Y: </label><select id="ydropdown">
-				<option val="region">region</option>
-				<option val="category">category</option>
-			</select>
-		</div>
-		<div style="display: table-cell; width: 150;">
-			<button id="update" onclick="updateClicked()">Update</button>
-		</div>
-	</div>
-</div>
-
+<div onload="init()"></div>
 <div id="vis"></div>
 
 <script type="text/javascript">
-	 d3.select("#chart").append("p")
-		 .text("Hello, world!");
+	init();
 </script>
-
 
 		</div>
 	</div>

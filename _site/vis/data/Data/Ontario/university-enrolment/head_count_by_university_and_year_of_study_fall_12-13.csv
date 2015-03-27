@@ -1,0 +1,157 @@
+UNIVERSITY,YEAR OF STUDY,HEAD COUNT
+Algoma,1,414
+Algoma,2,276
+Algoma,3,248
+Algoma,4,168
+Algoma,Total,"1,106"
+Brock,1,"5,902"
+Brock,2,"3,913"
+Brock,3,"2,955"
+Brock,4,"1,866"
+Brock,Not Reported,"1,218"
+Brock,Total,"15,854"
+Carleton,1,"5,908"
+Carleton,2,"5,731"
+Carleton,3,"4,580"
+Carleton,4,"2,833"
+Carleton,Not Reported,"3,384"
+Carleton,Total,"22,436"
+Guelph,1,"6,976"
+Guelph,2,"6,847"
+Guelph,3,"5,497"
+Guelph,4,"5,162"
+Guelph,5,139
+Guelph,6,56
+Guelph,7,69
+Guelph,8,47
+Guelph,9,14
+Guelph,10,13
+Guelph,Not Reported,90
+Guelph,Total,"24,920"
+Lakehead,1,"2,223"
+Lakehead,2,"1,366"
+Lakehead,3,"1,404"
+Lakehead,4,"1,185"
+Lakehead,5,817
+Lakehead,6,105
+Lakehead,Total,"7,100"
+Laurentian,1,"2,264"
+Laurentian,2,"1,672"
+Laurentian,3,"1,603"
+Laurentian,4,"1,199"
+Laurentian,Not Reported,15
+Laurentian,Total,"6,753"
+McMaster,1,"6,476"
+McMaster,2,"6,305"
+McMaster,3,"5,359"
+McMaster,4,"4,028"
+McMaster,5,330
+McMaster,6,11
+McMaster,Not Reported,"3,280"
+McMaster,Total,"25,793"
+Nipissing,1,"1,546"
+Nipissing,2,765
+Nipissing,3,799
+Nipissing,4,550
+Nipissing,Not Reported,103
+Nipissing,Total,"3,766"
+NOSM,1,203
+NOSM,2,63
+NOSM,3,66
+NOSM,4,55
+NOSM,Total,387
+OCAD,1,"1,215"
+OCAD,2,938
+OCAD,3,721
+OCAD,4,563
+OCAD,Not Reported,134
+OCAD,Total,"3,571"
+Ottawa,1,"9,541"
+Ottawa,2,"7,634"
+Ottawa,3,"6,443"
+Ottawa,4,"5,685"
+Ottawa,5,97
+Ottawa,6,19
+Ottawa,Not Reported,"5,706"
+Ottawa,Total,"35,132"
+"Queen""s",1,"6,446"
+"Queen""s",2,"5,195"
+"Queen""s",3,"4,733"
+"Queen""s",4,"3,687"
+"Queen""s",5,837
+"Queen""s",6,88
+"Queen""s",7,42
+"Queen""s",8,13
+"Queen""s",Total,"21,049"
+Ryerson,1,"7,260"
+Ryerson,2,"5,479"
+Ryerson,3,"4,646"
+Ryerson,4,"4,873"
+Ryerson,Not Reported,470
+Ryerson,Total,"22,728"
+Toronto,1,"24,284"
+Toronto,2,"19,181"
+Toronto,3,"14,124"
+Toronto,4,"12,741"
+Toronto,5,"1,281"
+Toronto,6,672
+Toronto,7,336
+Toronto,8,155
+Toronto,9,91
+Toronto,Not Reported,350
+Toronto,Total,"73,215"
+Trent,1,"2,288"
+Trent,2,"2,031"
+Trent,3,"1,381"
+Trent,4,"1,046"
+Trent,5,13
+Trent,Not Reported,46
+Trent,Total,"6,824"
+UOIT,1,"2,851"
+UOIT,2,"2,152"
+UOIT,3,"1,798"
+UOIT,4,"1,528"
+UOIT,5,143
+UOIT,Total,"8,472"
+Waterloo,1,"9,160"
+Waterloo,2,"8,823"
+Waterloo,3,"7,287"
+Waterloo,4,"5,966"
+Waterloo,5,251
+Waterloo,6,92
+Waterloo,7,23
+Waterloo,Not Reported,576
+Waterloo,Total,"32,187"
+Western,1,"6,719"
+Western,2,"7,234"
+Western,3,"6,968"
+Western,4,"6,151"
+Western,Not Reported,"6,414"
+Western,Total,"33,486"
+Wilfrid Laurier,1,"4,766"
+Wilfrid Laurier,2,"4,071"
+Wilfrid Laurier,3,"3,390"
+Wilfrid Laurier,4,"2,445"
+Wilfrid Laurier,5,251
+Wilfrid Laurier,Not Reported,"1,280"
+Wilfrid Laurier,Total,"16,203"
+Windsor,1,"3,972"
+Windsor,2,"2,874"
+Windsor,3,"2,786"
+Windsor,4,"2,040"
+Windsor,Not Reported,"2,029"
+Windsor,Total,"13,710"
+York,1,"12,931"
+York,2,"10,956"
+York,3,"10,909"
+York,4,"7,303"
+York,5,268
+York,6,174
+York,7,18
+York,Not Reported,"2,605"
+York,Total,"45,164"
+Dominician,1,18
+Dominician,2,12
+Dominician,Not Reported,65
+Dominician,Total,107
+Total,,"419,963"

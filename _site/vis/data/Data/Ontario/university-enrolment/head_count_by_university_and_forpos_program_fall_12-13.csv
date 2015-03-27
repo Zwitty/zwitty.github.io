@@ -1,0 +1,609 @@
+UNIVERSITY,PROGRAM FORPOS,HEAD COUNT
+Algoma,"103 - Arts, gen and 1st yr honours",227
+Algoma,"104 - Arts, upper years honours",210
+Algoma,105 - Commerce and business admin,305
+Algoma,108 - Fine and applied arts,22
+Algoma,123 - Science general & 1st yr hon,126
+Algoma,124 - Science upper yrs honours,102
+Algoma,125 - Social work - 1st year,36
+Algoma,145 - Social work - upper years,78
+Algoma,Total,"1,106"
+Brock,"103 - Arts, gen and 1st yr honours","3,284"
+Brock,"104 - Arts, upper years honours","1,643"
+Brock,243 - Child study,24
+Brock,171 - Collaborative nursing,321
+Brock,244 - Commerce & business admin,477
+Brock,105 - Commerce and business admin,"2,502"
+Brock,285 - Computer science,18
+Brock,273 - Education,170
+Brock,139 - Education - consecutive deg,656
+Brock,108 - Fine and applied arts,507
+Brock,249 - Geography,12
+Brock,252 - Humanities,81
+Brock,257 - Mathematics,19
+Brock,117 - Music,54
+Brock,263 - Physical & biol sciences,107
+Brock,120 - Physical & health education,"1,863"
+Brock,262 - Physical & health educatn,135
+Brock,265 - Psychology,42
+Brock,123 - Science general & 1st yr hon,"2,050"
+Brock,124 - Science upper yrs honours,"1,794"
+Brock,268 - Social sciences - other,49
+Brock,267 - Social work,46
+Brock,Total,"15,854"
+Carleton,102 - Architecture,316
+Carleton,291 - Architecture,27
+Carleton,242 - Architecture,77
+Carleton,"103 - Arts, gen and 1st yr honours","3,370"
+Carleton,"104 - Arts, upper years honours","4,412"
+Carleton,244 - Commerce & business admin,145
+Carleton,105 - Commerce and business admin,"2,141"
+Carleton,246 - Engineering,669
+Carleton,107 - Engineering,"2,946"
+Carleton,247 - Fine and applied arts,22
+Carleton,249 - Geography,35
+Carleton,252 - Humanities,349
+Carleton,146 - Industrial Design,172
+Carleton,111 - Journalism,185
+Carleton,254 - Journalism,56
+Carleton,255 - Law,23
+Carleton,257 - Mathematics,80
+Carleton,117 - Music,128
+Carleton,259 - Music,18
+Carleton,263 - Physical & biol sciences,323
+Carleton,265 - Psychology,198
+Carleton,266 - Public administration,187
+Carleton,123 - Science general & 1st yr hon,"2,359"
+Carleton,124 - Science upper yrs honours,"3,151"
+Carleton,268 - Social sciences - other,684
+Carleton,267 - Social work,87
+Carleton,125 - Social work - 1st year,56
+Carleton,145 - Social work - upper years,220
+Carleton,Total,"22,436"
+Guelph,101 - Agriculture,"1,072"
+Guelph,241 - Agriculture,305
+Guelph,"103 - Arts, gen and 1st yr honours","2,040"
+Guelph,"104 - Arts, upper years honours","3,002"
+Guelph,244 - Commerce & business admin,91
+Guelph,105 - Commerce and business admin,"3,638"
+Guelph,285 - Computer science,50
+Guelph,270 - Criminology,28
+Guelph,246 - Engineering,141
+Guelph,107 - Engineering,"1,208"
+Guelph,127 - Envir.studies/sci (upper yrs),278
+Guelph,271 - Environmental studies,42
+Guelph,108 - Fine and applied arts,414
+Guelph,249 - Geography,59
+Guelph,156 - Hotel and food admin,341
+Guelph,110 - Household & food science,"2,456"
+Guelph,251 - Household and food science,235
+Guelph,252 - Humanities,346
+Guelph,253 - Hygiene and public health,36
+Guelph,112 - Landscape architecture,221
+Guelph,257 - Mathematics,79
+Guelph,117 - Music,68
+Guelph,263 - Physical & biol sciences,482
+Guelph,265 - Psychology,101
+Guelph,123 - Science general & 1st yr hon,"2,589"
+Guelph,124 - Science upper yrs honours,"4,713"
+Guelph,268 - Social sciences - other,123
+Guelph,279 - Urban & regional planning,62
+Guelph,269 - Veterinary medicine,224
+Guelph,126 - Veterinary medicine,462
+Guelph,Total,"24,920"
+Lakehead,150 - Administration,41
+Lakehead,136 - Arts & science 1st year,279
+Lakehead,"103 - Arts, gen and 1st yr honours",738
+Lakehead,"104 - Arts, upper years honours",408
+Lakehead,171 - Collaborative nursing,394
+Lakehead,166 - Comb arts & sci.,295
+Lakehead,244 - Commerce & business admin,29
+Lakehead,105 - Commerce and business admin,390
+Lakehead,285 - Computer science,30
+Lakehead,151 - Conv pgm in engineering,469
+Lakehead,273 - Education,150
+Lakehead,187 - Education - aboriginal,18
+Lakehead,139 - Education - consecutive deg,791
+Lakehead,246 - Engineering,48
+Lakehead,107 - Engineering,330
+Lakehead,127 - Envir.studies/sci (upper yrs),31
+Lakehead,271 - Environmental studies,31
+Lakehead,108 - Fine and applied arts,27
+Lakehead,248 - Forestry,39
+Lakehead,109 - Forestry,117
+Lakehead,252 - Humanities,30
+Lakehead,253 - Hygiene and public health,91
+Lakehead,117 - Music,39
+Lakehead,260 - Nursing,72
+Lakehead,118 - Nursing,215
+Lakehead,163 - Phys. ed. honors-lakehead,204
+Lakehead,263 - Physical & biol sciences,90
+Lakehead,120 - Physical & health education,339
+Lakehead,262 - Physical & health educatn,12
+Lakehead,265 - Psychology,48
+Lakehead,123 - Science general & 1st yr hon,309
+Lakehead,124 - Science upper yrs honours,545
+Lakehead,268 - Social sciences - other,32
+Lakehead,267 - Social work,42
+Lakehead,125 - Social work - 1st year,107
+Lakehead,145 - Social work - upper years,262
+Lakehead,Total,"7,100"
+Laurentian,"103 - Arts, gen and 1st yr honours",997
+Laurentian,"104 - Arts, upper years honours","1,220"
+Laurentian,278 - Child development,21
+Laurentian,171 - Collaborative nursing,263
+Laurentian,244 - Commerce & business admin,46
+Laurentian,105 - Commerce and business admin,882
+Laurentian,285 - Computer science,17
+Laurentian,139 - Education - consecutive deg,223
+Laurentian,246 - Engineering,37
+Laurentian,107 - Engineering,425
+Laurentian,252 - Humanities,24
+Laurentian,253 - Hygiene and public health,14
+Laurentian,173 - Midwifery,105
+Laurentian,117 - Music,19
+Laurentian,260 - Nursing,14
+Laurentian,118 - Nursing,102
+Laurentian,263 - Physical & biol sciences,124
+Laurentian,120 - Physical & health education,390
+Laurentian,262 - Physical & health educatn,20
+Laurentian,265 - Psychology,29
+Laurentian,123 - Science general & 1st yr hon,433
+Laurentian,124 - Science upper yrs honours,868
+Laurentian,268 - Social sciences - other,43
+Laurentian,267 - Social work,14
+Laurentian,125 - Social work - 1st year,101
+Laurentian,145 - Social work - upper years,320
+Laurentian,Total,"6,753"
+McMaster,"103 - Arts, gen and 1st yr honours","2,754"
+McMaster,"104 - Arts, upper years honours","2,497"
+McMaster,171 - Collaborative nursing,"1,312"
+McMaster,166 - Comb arts & sci.,199
+McMaster,244 - Commerce & business admin,526
+McMaster,105 - Commerce and business admin,"2,032"
+McMaster,289 - Comp. meng.& public policy,10
+McMaster,285 - Computer science,55
+McMaster,246 - Engineering,686
+McMaster,107 - Engineering,"3,431"
+McMaster,152 - Engineering & mgmt - eng.,243
+McMaster,153 - Engineering & mgmt - mgmt,273
+McMaster,108 - Fine and applied arts,96
+McMaster,249 - Geography,32
+McMaster,252 - Humanities,278
+McMaster,253 - Hygiene and public health,134
+McMaster,257 - Mathematics,94
+McMaster,134 - Medical interns & residents,920
+McMaster,258 - Medicine,466
+McMaster,155 - Medicine year 1 & 2,408
+McMaster,154 - Medicine year 3,201
+McMaster,173 - Midwifery,120
+McMaster,117 - Music,130
+McMaster,260 - Nursing,70
+McMaster,118 - Nursing,314
+McMaster,282 - Occupational/physical therapy,293
+McMaster,263 - Physical & biol sciences,395
+McMaster,120 - Physical & health education,211
+McMaster,262 - Physical & health educatn,63
+McMaster,188 - Physician assistant ed progra,47
+McMaster,265 - Psychology,106
+McMaster,123 - Science general & 1st yr hon,"2,276"
+McMaster,124 - Science upper yrs honours,"4,588"
+McMaster,268 - Social sciences - other,299
+McMaster,267 - Social work,28
+McMaster,145 - Social work - upper years,143
+McMaster,129 - Theology,54
+McMaster,Total,"25,793"
+Nipissing,"103 - Arts, gen and 1st yr honours",489
+Nipissing,"104 - Arts, upper years honours",586
+Nipissing,171 - Collaborative nursing,278
+Nipissing,105 - Commerce and business admin,307
+Nipissing,273 - Education,52
+Nipissing,139 - Education - consecutive deg,736
+Nipissing,127 - Envir.studies/sci (upper yrs),15
+Nipissing,271 - Environmental studies,16
+Nipissing,108 - Fine and applied arts,49
+Nipissing,252 - Humanities,18
+Nipissing,118 - Nursing,114
+Nipissing,120 - Physical & health education,324
+Nipissing,123 - Science general & 1st yr hon,230
+Nipissing,124 - Science upper yrs honours,542
+Nipissing,Total,"3,766"
+NOSM,134 - Medical interns & residents,138
+NOSM,115 - Medicine,249
+NOSM,Total,387
+OCAD,247 - Fine and applied arts,133
+OCAD,175 - Fine and applied arts-o.c.a.d.,"3,438"
+OCAD,Total,"3,571"
+Ottawa,"103 - Arts, gen and 1st yr honours","4,069"
+Ottawa,"104 - Arts, upper years honours","5,866"
+Ottawa,184 - Civil law & hon.int.dev.globa,96
+Ottawa,171 - Collaborative nursing,"1,279"
+Ottawa,244 - Commerce & business admin,177
+Ottawa,105 - Commerce and business admin,"3,541"
+Ottawa,285 - Computer science,188
+Ottawa,270 - Criminology,122
+Ottawa,273 - Education,367
+Ottawa,139 - Education - consecutive deg,"1,212"
+Ottawa,246 - Engineering,828
+Ottawa,107 - Engineering,"2,162"
+Ottawa,247 - Fine and applied arts,31
+Ottawa,108 - Fine and applied arts,348
+Ottawa,249 - Geography,44
+Ottawa,250 - Hospital administration,35
+Ottawa,110 - Household & food science,161
+Ottawa,252 - Humanities,640
+Ottawa,253 - Hygiene and public health,100
+Ottawa,111 - Journalism,27
+Ottawa,113 - Law,"1,821"
+Ottawa,255 - Law,106
+Ottawa,256 - Library science,27
+Ottawa,257 - Mathematics,69
+Ottawa,134 - Medical interns & residents,917
+Ottawa,258 - Medicine,286
+Ottawa,115 - Medicine,638
+Ottawa,117 - Music,243
+Ottawa,259 - Music,65
+Ottawa,260 - Nursing,88
+Ottawa,118 - Nursing,19
+Ottawa,282 - Occupational/physical therapy,160
+Ottawa,283 - Pastoral studies,90
+Ottawa,263 - Physical & biol sciences,512
+Ottawa,120 - Physical & health education,"1,484"
+Ottawa,262 - Physical & health educatn,197
+Ottawa,265 - Psychology,178
+Ottawa,266 - Public administration,50
+Ottawa,123 - Science general & 1st yr hon,"2,067"
+Ottawa,124 - Science upper yrs honours,"3,919"
+Ottawa,268 - Social sciences - other,697
+Ottawa,267 - Social work,59
+Ottawa,277 - Speech pathology & audiology,71
+Ottawa,129 - Theology,51
+Ottawa,"284 - Theology, ma/phd",25
+Ottawa,Total,"35,132"
+"Queen""s",276 - Art conservation,23
+"Queen""s","103 - Arts, gen and 1st yr honours","2,200"
+"Queen""s","104 - Arts, upper years honours","3,416"
+"Queen""s",244 - Commerce & business admin,846
+"Queen""s",105 - Commerce and business admin,"1,763"
+"Queen""s",286 - Compressed mba,96
+"Queen""s",285 - Computer science,125
+"Queen""s",273 - Education,109
+"Queen""s",139 - Education - consecutive deg,615
+"Queen""s",442 - Education - consecutive dip,58
+"Queen""s",142 - Education - consecutive dip,23
+"Queen""s",246 - Engineering,447
+"Queen""s",107 - Engineering,"2,726"
+"Queen""s",271 - Environmental studies,22
+"Queen""s",247 - Fine and applied arts,56
+"Queen""s",108 - Fine and applied arts,75
+"Queen""s",249 - Geography,65
+"Queen""s",252 - Humanities,297
+"Queen""s",253 - Hygiene and public health,93
+"Queen""s",280 - Industrial relations,44
+"Queen""s",113 - Law,525
+"Queen""s",255 - Law,18
+"Queen""s",257 - Mathematics,43
+"Queen""s",134 - Medical interns & residents,458
+"Queen""s",258 - Medicine,178
+"Queen""s",115 - Medicine,400
+"Queen""s",117 - Music,162
+"Queen""s",260 - Nursing,43
+"Queen""s",118 - Nursing,423
+"Queen""s",282 - Occupational/physical therapy,302
+"Queen""s",263 - Physical & biol sciences,329
+"Queen""s",120 - Physical & health education,199
+"Queen""s",262 - Physical & health educatn,75
+"Queen""s",265 - Psychology,145
+"Queen""s",266 - Public administration,68
+"Queen""s",123 - Science general & 1st yr hon,"1,217"
+"Queen""s",124 - Science upper yrs honours,"3,031"
+"Queen""s",268 - Social sciences - other,248
+"Queen""s",129 - Theology,12
+"Queen""s",279 - Urban & regional planning,71
+"Queen""s",Total,"21,049"
+Ryerson,102 - Architecture,309
+Ryerson,242 - Architecture,95
+Ryerson,276 - Art conservation,44
+Ryerson,"103 - Arts, gen and 1st yr honours","1,045"
+Ryerson,"104 - Arts, upper years honours","1,540"
+Ryerson,243 - Child study,23
+Ryerson,171 - Collaborative nursing,"1,361"
+Ryerson,244 - Commerce & business admin,217
+Ryerson,105 - Commerce and business admin,"6,115"
+Ryerson,285 - Computer science,69
+Ryerson,273 - Education,23
+Ryerson,246 - Engineering,647
+Ryerson,107 - Engineering,"2,370"
+Ryerson,127 - Envir.studies/sci (upper yrs),367
+Ryerson,271 - Environmental studies,71
+Ryerson,247 - Fine and applied arts,112
+Ryerson,108 - Fine and applied arts,"2,911"
+Ryerson,249 - Geography,20
+Ryerson,156 - Hotel and food admin,477
+Ryerson,110 - Household & food science,"1,081"
+Ryerson,251 - Household and food science,16
+Ryerson,252 - Humanities,127
+Ryerson,111 - Journalism,155
+Ryerson,254 - Journalism,74
+Ryerson,257 - Mathematics,24
+Ryerson,260 - Nursing,75
+Ryerson,118 - Nursing,265
+Ryerson,263 - Physical & biol sciences,83
+Ryerson,265 - Psychology,96
+Ryerson,266 - Public administration,67
+Ryerson,123 - Science general & 1st yr hon,634
+Ryerson,124 - Science upper yrs honours,"1,469"
+Ryerson,268 - Social sciences - other,10
+Ryerson,267 - Social work,40
+Ryerson,125 - Social work - 1st year,116
+Ryerson,145 - Social work - upper years,507
+Ryerson,279 - Urban & regional planning,64
+Ryerson,Total,"22,728"
+Toronto,291 - Architecture,267
+Toronto,242 - Architecture,80
+Toronto,"103 - Arts, gen and 1st yr honours","6,044"
+Toronto,"104 - Arts, upper years honours","13,507"
+Toronto,243 - Child study,243
+Toronto,244 - Commerce & business admin,"1,477"
+Toronto,105 - Commerce and business admin,"6,318"
+Toronto,285 - Computer science,241
+Toronto,270 - Criminology,38
+Toronto,287 - Dental specialty (3 years),25
+Toronto,288 - Dental specialty (4 years),15
+Toronto,106 - Dentistry,315
+Toronto,245 - Dentistry,92
+Toronto,273 - Education,"1,188"
+Toronto,139 - Education - consecutive deg,912
+Toronto,142 - Education - consecutive dip,47
+Toronto,246 - Engineering,"1,486"
+Toronto,107 - Engineering,"4,575"
+Toronto,271 - Environmental studies,77
+Toronto,247 - Fine and applied arts,31
+Toronto,108 - Fine and applied arts,564
+Toronto,248 - Forestry,97
+Toronto,249 - Geography,119
+Toronto,251 - Household and food science,64
+Toronto,252 - Humanities,"1,267"
+Toronto,253 - Hygiene and public health,625
+Toronto,113 - Law,607
+Toronto,255 - Law,125
+Toronto,256 - Library science,362
+Toronto,257 - Mathematics,197
+Toronto,134 - Medical interns & residents,"2,904"
+Toronto,258 - Medicine,"1,807"
+Toronto,115 - Medicine,989
+Toronto,117 - Music,572
+Toronto,259 - Music,259
+Toronto,260 - Nursing,281
+Toronto,118 - Nursing,338
+Toronto,282 - Occupational/physical therapy,426
+Toronto,174 - Pharm D,72
+Toronto,119 - Pharmacy,964
+Toronto,261 - Pharmacy,115
+Toronto,263 - Physical & biol sciences,901
+Toronto,120 - Physical & health education,846
+Toronto,262 - Physical & health educatn,64
+Toronto,188 - Physician assistant ed progra,28
+Toronto,133 - Preliminary year,65
+Toronto,265 - Psychology,150
+Toronto,266 - Public administration,101
+Toronto,123 - Science general & 1st yr hon,"5,224"
+Toronto,124 - Science upper yrs honours,"14,103"
+Toronto,268 - Social sciences - other,799
+Toronto,267 - Social work,427
+Toronto,277 - Speech pathology & audiology,97
+Toronto,272 - Theology,140
+Toronto,129 - Theology,241
+Toronto,"284 - Theology, ma/phd",194
+Toronto,279 - Urban & regional planning,100
+Toronto,Total,"73,215"
+Trent,136 - Arts & science 1st year,38
+Trent,"103 - Arts, gen and 1st yr honours","1,138"
+Trent,"104 - Arts, upper years honours","2,073"
+Trent,171 - Collaborative nursing,419
+Trent,105 - Commerce and business admin,399
+Trent,139 - Education - consecutive deg,270
+Trent,271 - Environmental studies,175
+Trent,252 - Humanities,165
+Trent,118 - Nursing,194
+Trent,263 - Physical & biol sciences,15
+Trent,265 - Psychology,19
+Trent,123 - Science general & 1st yr hon,632
+Trent,124 - Science upper yrs honours,"1,244"
+Trent,268 - Social sciences - other,41
+Trent,Total,"6,824"
+UOIT,"103 - Arts, gen and 1st yr honours",510
+UOIT,"104 - Arts, upper years honours","1,265"
+UOIT,171 - Collaborative nursing,671
+UOIT,105 - Commerce and business admin,"1,300"
+UOIT,285 - Computer science,46
+UOIT,270 - Criminology,29
+UOIT,273 - Education,21
+UOIT,139 - Education - consecutive deg,238
+UOIT,246 - Engineering,157
+UOIT,107 - Engineering,"1,589"
+UOIT,152 - Engineering & mgmt - eng.,69
+UOIT,153 - Engineering & mgmt - mgmt,33
+UOIT,263 - Physical & biol sciences,70
+UOIT,186 - Science & management (5yr),14
+UOIT,123 - Science general & 1st yr hon,901
+UOIT,124 - Science upper yrs honours,"1,549"
+UOIT,Total,"8,472"
+Waterloo,102 - Architecture,370
+Waterloo,242 - Architecture,90
+Waterloo,"103 - Arts, gen and 1st yr honours","2,985"
+Waterloo,"104 - Arts, upper years honours","1,483"
+Waterloo,166 - Comb arts & sci.,59
+Waterloo,244 - Commerce & business admin,118
+Waterloo,105 - Commerce and business admin,"1,435"
+Waterloo,285 - Computer science,288
+Waterloo,246 - Engineering,"1,353"
+Waterloo,107 - Engineering,"6,694"
+Waterloo,127 - Envir.studies/sci (upper yrs),107
+Waterloo,271 - Environmental studies,120
+Waterloo,108 - Fine and applied arts,218
+Waterloo,249 - Geography,175
+Waterloo,252 - Humanities,222
+Waterloo,253 - Hygiene and public health,73
+Waterloo,257 - Mathematics,301
+Waterloo,117 - Music,29
+Waterloo,137 - Optometry,361
+Waterloo,119 - Pharmacy,350
+Waterloo,261 - Pharmacy,23
+Waterloo,263 - Physical & biol sciences,483
+Waterloo,120 - Physical & health education,"1,892"
+Waterloo,262 - Physical & health educatn,212
+Waterloo,275 - Physiological optics,33
+Waterloo,265 - Psychology,99
+Waterloo,266 - Public administration,44
+Waterloo,123 - Science general & 1st yr hon,"3,407"
+Waterloo,124 - Science upper yrs honours,"8,878"
+Waterloo,268 - Social sciences - other,183
+Waterloo,145 - Social work - upper years,81
+Waterloo,"284 - Theology, ma/phd",13
+Waterloo,Total,"32,187"
+Western,"103 - Arts, gen and 1st yr honours","3,816"
+Western,"104 - Arts, upper years honours","4,974"
+Western,171 - Collaborative nursing,701
+Western,244 - Commerce & business admin,252
+Western,105 - Commerce and business admin,"4,419"
+Western,286 - Compressed mba,149
+Western,285 - Computer science,132
+Western,106 - Dentistry,266
+Western,273 - Education,177
+Western,139 - Education - consecutive deg,680
+Western,246 - Engineering,648
+Western,107 - Engineering,"1,382"
+Western,127 - Envir.studies/sci (upper yrs),58
+Western,271 - Environmental studies,34
+Western,108 - Fine and applied arts,220
+Western,249 - Geography,85
+Western,110 - Household & food science,582
+Western,251 - Household and food science,32
+Western,252 - Humanities,448
+Western,253 - Hygiene and public health,11
+Western,254 - Journalism,37
+Western,113 - Law,482
+Western,256 - Library science,233
+Western,257 - Mathematics,41
+Western,134 - Medical interns & residents,829
+Western,258 - Medicine,55
+Western,115 - Medicine,667
+Western,117 - Music,542
+Western,259 - Music,119
+Western,260 - Nursing,79
+Western,118 - Nursing,119
+Western,282 - Occupational/physical therapy,534
+Western,263 - Physical & biol sciences,"1,144"
+Western,120 - Physical & health education,"1,129"
+Western,262 - Physical & health educatn,105
+Western,133 - Preliminary year,18
+Western,265 - Psychology,102
+Western,123 - Science general & 1st yr hon,"2,000"
+Western,124 - Science upper yrs honours,"5,623"
+Western,268 - Social sciences - other,378
+Western,267 - Social work,20
+Western,145 - Social work - upper years,82
+Western,129 - Theology,56
+Western,Total,"33,486"
+Wilfrid Laurier,136 - Arts & science 1st year,10
+Wilfrid Laurier,"103 - Arts, gen and 1st yr honours","2,978"
+Wilfrid Laurier,"104 - Arts, upper years honours","4,538"
+Wilfrid Laurier,244 - Commerce & business admin,176
+Wilfrid Laurier,105 - Commerce and business admin,"3,273"
+Wilfrid Laurier,270 - Criminology,11
+Wilfrid Laurier,139 - Education - consecutive deg,140
+Wilfrid Laurier,249 - Geography,48
+Wilfrid Laurier,252 - Humanities,117
+Wilfrid Laurier,111 - Journalism,32
+Wilfrid Laurier,117 - Music,299
+Wilfrid Laurier,259 - Music,16
+Wilfrid Laurier,283 - Pastoral studies,18
+Wilfrid Laurier,263 - Physical & biol sciences,42
+Wilfrid Laurier,120 - Physical & health education,379
+Wilfrid Laurier,262 - Physical & health educatn,29
+Wilfrid Laurier,121 - Physio & occupational thrpy,19
+Wilfrid Laurier,265 - Psychology,84
+Wilfrid Laurier,266 - Public administration,13
+Wilfrid Laurier,123 - Science general & 1st yr hon,"1,386"
+Wilfrid Laurier,124 - Science upper yrs honours,"2,213"
+Wilfrid Laurier,268 - Social sciences - other,68
+Wilfrid Laurier,267 - Social work,242
+Wilfrid Laurier,272 - Theology,14
+Wilfrid Laurier,"284 - Theology, ma/phd",38
+Wilfrid Laurier,Total,"16,203"
+Windsor,136 - Arts & science 1st year,23
+Windsor,"103 - Arts, gen and 1st yr honours","1,538"
+Windsor,"104 - Arts, upper years honours","1,345"
+Windsor,171 - Collaborative nursing,815
+Windsor,166 - Comb arts & sci.,43
+Windsor,244 - Commerce & business admin,252
+Windsor,105 - Commerce and business admin,"1,368"
+Windsor,285 - Computer science,63
+Windsor,270 - Criminology,11
+Windsor,273 - Education,46
+Windsor,139 - Education - consecutive deg,506
+Windsor,246 - Engineering,573
+Windsor,107 - Engineering,885
+Windsor,127 - Envir.studies/sci (upper yrs),77
+Windsor,108 - Fine and applied arts,516
+Windsor,252 - Humanities,27
+Windsor,113 - Law,619
+Windsor,257 - Mathematics,28
+Windsor,117 - Music,146
+Windsor,260 - Nursing,41
+Windsor,263 - Physical & biol sciences,176
+Windsor,120 - Physical & health education,407
+Windsor,262 - Physical & health educatn,64
+Windsor,265 - Psychology,117
+Windsor,123 - Science general & 1st yr hon,"1,100"
+Windsor,124 - Science upper yrs honours,"1,922"
+Windsor,268 - Social sciences - other,144
+Windsor,267 - Social work,355
+Windsor,125 - Social work - 1st year,181
+Windsor,145 - Social work - upper years,308
+Windsor,Total,"13,710"
+York,"103 - Arts, gen and 1st yr honours","8,845"
+York,"104 - Arts, upper years honours","8,047"
+York,171 - Collaborative nursing,781
+York,244 - Commerce & business admin,853
+York,105 - Commerce and business admin,"5,563"
+York,285 - Computer science,75
+York,273 - Education,136
+York,139 - Education - consecutive deg,538
+York,107 - Engineering,222
+York,127 - Envir.studies/sci (upper yrs),557
+York,271 - Environmental studies,285
+York,247 - Fine and applied arts,210
+York,108 - Fine and applied arts,"2,312"
+York,249 - Geography,61
+York,168 - Health administration,"1,063"
+York,252 - Humanities,537
+York,253 - Hygiene and public health,27
+York,113 - Law,871
+York,255 - Law,103
+York,158 - Law-mba combined,64
+York,257 - Mathematics,81
+York,117 - Music,539
+York,259 - Music,121
+York,260 - Nursing,47
+York,118 - Nursing,314
+York,263 - Physical & biol sciences,282
+York,120 - Physical & health education,"2,504"
+York,262 - Physical & health educatn,117
+York,133 - Preliminary year,27
+York,265 - Psychology,210
+York,123 - Science general & 1st yr hon,"4,470"
+York,124 - Science upper yrs honours,"4,086"
+York,268 - Social sciences - other,622
+York,267 - Social work,148
+York,125 - Social work - 1st year,97
+York,145 - Social work - upper years,347
+York,Total,"45,164"
+Dominician,"103 - Arts, gen and 1st yr honours",16
+Dominician,"104 - Arts, upper years honours",20
+Dominician,252 - Humanities,27
+Dominician,129 - Theology,21
+Dominician,"284 - Theology, ma/phd",23
+Dominician,Total,107
+Total,,"419,963"
