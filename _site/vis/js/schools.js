@@ -20,18 +20,22 @@ function init(){
 
 function updateClicked(){
 	if(getSelectedLang() == 'English' && getSelectedType() == 'Public'){
+		document.getElementById("title").innerHTML = "English Public School Districts";
 		d3.json("data/epublic.geojson", drawMap)
 	}
 
 	if(getSelectedLang() == 'French' && getSelectedType() == 'Public'){
+		document.getElementById("title").innerHTML = "French Public School Districts";
 		d3.json("data/fpublic.geojson", drawMap)
 	}
 
 	if(getSelectedLang() == 'English' && getSelectedType() == 'Catholic'){
+		document.getElementById("title").innerHTML = "English Catholic School Districts";
 		d3.json("data/ecatholic.geojson", drawMap)
 	}
 
 	if(getSelectedLang() == 'French' && getSelectedType() == 'Catholic'){
+		document.getElementById("title").innerHTML = "French Catholic School Districts";
 		d3.json("data/fcatholic.geojson", drawMap)
 	}
 }
