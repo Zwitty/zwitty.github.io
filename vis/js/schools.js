@@ -10,7 +10,7 @@ function init(){
 		.attr("height", height)
   //PUT YOUR INIT CODE BELOW
   console.log("init");
-  d3.json("data/fcatholic.geojson", drawMap)
+  d3.json("data/epublic.geojson", drawMap)
 }
 
 
@@ -46,12 +46,23 @@ function drawMap(rawdata){
 		.attr("class", "area")
 		.attr("fill", "steelblue");
 	
-	group.on('mouseover', function(d,i){
+	areas.on('mouseover', function(d,i){
 		d3.select(this.parentNode.appendChild(this))
-			.style({'fill-opacity':1,'stroke':'#F00'});
+			.attr("fill", "orange");
+			//console.log(this);
+			//.style({'fill-opacity':1,'stroke':'#F00'});
 	})
 
+	areas.on('mouseout', function(d,i){
+		d3.select(this.parentNode.appendChild(this))
+			.attr("fill", "steelblue");
 
+	})
+
+	areas.on('click', function(d,i){
+		d3.select(this.parentNode.appendChild(this))
+			.attr("fill","red");
+	})
 
 	/*group.append("text")
 		.attr("x", function (d) { return path.centroid(d)[0]; })
@@ -59,5 +70,4 @@ function drawMap(rawdata){
 		.attr("text-anchor", "middle")
 		.attr('font-size', '10pt')
 		.text(function (d) {return d.properties.NAME; });*/
-
 }
