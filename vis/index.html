@@ -4,10 +4,28 @@ layout: resume
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="js/schools.js"></script>
 <h1>English Public School Districts</h1>
-<div id="chart"></div>
-<div onload="init()"></div>
-<!--<div id="vis"></div>-->
 
+<div style="margin:100;">
+	<div style="display: table-cell; width: 100;">
+		<label for="langdropdown">Language: </label>
+		<select id="langdropdown">
+			<option val="english">English</option>
+			<option val="french">French</option>
+		</select>
+	</div>
+	<div style="display: table-cell; width: 150; padding: 30px;">
+		<label for="typedropdown">District Type: </label>
+		<select id="typedropdown">
+			<option val="public">Public</option>
+			<option val="catholic">Catholic</option>
+		</select>
+	</div>
+	<div style="display: table-cell; width: 150;">
+		<button id="update" onclick="updateClicked()">Update</button>
+	</div>
+</div>
+
+<div id="vis"></div>
 <script type="text/javascript">
 	init();
 </script>

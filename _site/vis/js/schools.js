@@ -1,42 +1,54 @@
-var chart;
+var svg;
 var height = 1500
 var width = 600
 
 //Gets called when the page is loaded.
 function init(){
-  chart = d3.select('#vis').append('svg')
-  vis = chart.append('svg:g')
-  		.attr("width", width)
-		.attr("height", height)
   //PUT YOUR INIT CODE BELOW
-  console.log("init");
-  d3.json("data/epublic.geojson", drawMap)
+  var margin = {top: 80, right: 80, bottom: 80, left: 80},
+	  width = 1000 - margin.left - margin.right,
+	  height = 800 - margin.top - margin.bottom;
+
+  svg = d3.select("#vis").append("svg")
+	  .attr("width", width + margin.left + margin.right)
+	  .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	d3.json("data/epublic.geojson", drawMap)
 }
 
+function updateClicked(){
+	if(getSelectedLang() == 'English' && getSelectedType() == 'Public'){
+		d3.json("data/epublic.geojson", drawMap)
+	}
 
-//DEFINE YOUR VARIABLES UP HERE
-var margin = {top: 80, right: 80, bottom: 80, left: 80},
-	width = 1000 - margin.left - margin.right,
-	height = 800 - margin.top - margin.bottom;
+	if(getSelectedLang() == 'French' && getSelectedType() == 'Public'){
+		d3.json("data/fpublic.geojson", drawMap)
+	}
 
-var svg = d3.select("body").append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom)
-	.append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	if(getSelectedLang() == 'English' && getSelectedType() == 'Catholic'){
+		d3.json("data/ecatholic.geojson", drawMap)
+	}
 
-
+	if(getSelectedLang() == 'French' && getSelectedType() == 'Catholic'){
+		d3.json("data/fcatholic.geojson", drawMap)
+	}
+}
 
 function drawMap(rawdata){
-	console.log(rawdata);
-	var group = svg.selectAll("g")
+	//console.log(rawdata);
+
+	svg.selectAll("*").remove();
+
+	var group = svg.selectAll("#vis")
 		.data(rawdata.features)
 		.enter()
 		.append("g")
 
 	var projection = d3.geo.mercator()
 		.scale(2000)
-		.translate([3500, 2000])
+		.translate([3250, 2025])
 		.precision(.1);
 		
 	var path = d3.geo.path().projection(projection);
@@ -70,4 +82,15 @@ function drawMap(rawdata){
 		.attr("text-anchor", "middle")
 		.attr('font-size', '10pt')
 		.text(function (d) {return d.properties.NAME; });*/
+}
+
+function getSelectedLang(){
+	var node = d3.select('#langdropdown').node()
+	var i = node.selectedIndex
+	return node[i].value
+}
+function getSelectedType(){
+	var node = d3.select('#typedropdown').node()
+	var i = node.selectedIndex
+	return node[i].value
 }
