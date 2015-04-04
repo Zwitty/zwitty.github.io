@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <!-- I am here-->
+  {% include vhead.html %}
+  <!-- Oh look I am here --> 
+  <body>
+
+    {% include header.html %}
+  <div id="page-wrap">
+  	<div id="page-content">
+		<div id="content">
+	    	{{ content }}
+		</div>
+	</div>
+  </div>
+  
+    {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin or site.share.disqus %}
+    <script src="/assets/{{ site.github_username }}-{{ site.version }}.js"></script>
+    {% endif %}
+
+
+
+    </script>
+
+  </body>
+
+</html>

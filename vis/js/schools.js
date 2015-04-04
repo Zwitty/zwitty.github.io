@@ -1,13 +1,13 @@
-var svg;
-var height = 1500
-var width = 600
+var svg, enrol;
+//var height = 1500
+//var width = 600
 
 //Gets called when the page is loaded.
 function init(){
     //PUT YOUR INIT CODE BELOW
     var margin = {top: 80, right: 80, bottom: 80, left: 80},
-        width = 1000 - margin.left - margin.right,
-        height = 800 - margin.top - margin.bottom;
+        width = 750 - margin.left - margin.right,
+        height = 550 - margin.top - margin.bottom;
 
     svg = d3.select("#vis").append("svg")
         .attr("width", width + margin.left + margin.right)
@@ -40,7 +40,9 @@ function updateClicked(){
         d3.json("data/fcatholic.geojson", drawMap)
     }
 }
-
+/* Draws the boundary for Ontario
+ * Could be repuposed for other provinces
+ */
 function drawOntario(rawdata){
  
     var group = svg.selectAll("#vis")
@@ -59,6 +61,7 @@ function drawOntario(rawdata){
         .attr("d", path)
         .attr("class", "area")
         .attr("fill", "none")
+        .attr("background-color","gray")
         .attr("stroke", "black");
     
     group.append("text")
@@ -128,13 +131,14 @@ function drawMap(rawdata){
         .text(function (d) {return d.properties.NAME; });*/
 }
 
-function enrolChart(geoData, enrolData){
-    console.log("Inside enrol");
-    console.log(geoData);
-    
+function enrolChart(geoData, enrolData){ 
+   
+    //removes previous chart
+    d3.select("#enrol").select("svg").remove();
+
     var margin = {top: 80, right: 80, bottom: 80, left: 80},
-        width = 1000 - margin.left - margin.right,
-        height = 800 - margin.top - margin.bottom;
+        width = 700 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
     var enrol = d3.select("#enrol").append("svg")
         .attr("width", width + margin.left + margin.right)
@@ -142,14 +146,17 @@ function enrolChart(geoData, enrolData){
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
+    
+
     var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], 0.25);
+        .rangeRoundBands([20, 600], 0.1);
 
     var y = d3.scale.linear()
         .range([height,0]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
+        .tickPadding(-5)
         .orient("bottom");
 
     var yAxis = d3.svg.axis()
@@ -160,26 +167,45 @@ function enrolChart(geoData, enrolData){
 
     console.log(gradeTitles); 
 
-    enrolData.grades = gradeTitles.map(function(name){return {name: name, value: +enrolData[name]}; });
+    enrolData.grades = gradeTitles.map(function(name){
+        return {name: name, value: +enrolData[name]}; 
+    });
+    
+    console.log(enrolData.grades); 
+    console.log(x.rangeBand()); 
 
-    x.domain(gradeTitles).rangeRoundBands([0, x.rangeBand()]);
-    y.domain([0, d3.max(enrolData, function(d) {return d3.max(d.grades, function(d){return d.value;}); })]);
+    //x.domain(gradeTitles).rangeRoundBands([25, 700]);
+    x.domain(gradeTitles);
+    y.domain([0, d3.max(enrolData.grades, function(d) {return d.value;} )]);
 
     enrol.append("g")
         .attr("class","x axis")
         .attr("transform", "translate(0,"+height+")")
-        .call(xAxis);
+        .call(xAxis)
+        .selectAll("text")  
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", function(d) {
+            return "rotate(-65)" 
+        });
 
     enrol.append("g")
         .attr("class", "y axis")
-        .attr("transform", "translate(" + width + ",0)")
-        .call(yAxis);
+        .call(yAxis)
+       .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Number of Student Enrolled");
 
     enrol.selectAll("rect")
-        .data(enrolData)
+        .data(enrolData.grades)
         .enter().append("rect")
-        .style("fill", "orange")
+        .attr("class", "bar")
         .attr("x", function(d){return x(d.name);})
+        .attr("width", 30)
         .attr("y", function(d){return y(d.value);})
         .attr("height", function(d) { return height - y(d.value); });
 
@@ -187,7 +213,7 @@ function enrolChart(geoData, enrolData){
 
 function selectDistrict(geoData,i){
     //console.log(districtData);
-    d3.csv('data/Data/Ontario/enrolment-grade-elementary-schools/2011-2012/enrolment_by_grade-elementary_schools_2011-2012_en_0.csv', function(d){
+    d3.csv('data/Data/Ontario/enrolment-grade-elementary-schools/2011-2012/enrolment_by_grade-elementary_schools_2011-2012_en_4.csv', function(d){
         d.forEach(function(d){
             //console.log(d["Board Number"]);
             //Map data does not have a B infront of the district number but it is the same number
