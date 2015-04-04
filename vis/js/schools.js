@@ -82,7 +82,7 @@ function drawMap(rawdata){
 
     var quantize = d3.scale.quantize()
         .domain([0, 55000])
-        .range(d3.range(5).map(function(i){return "q" + i;}));
+        .range(d3.range(8).map(function(i){return "q" + i;}));
    
     var projection = d3.geo.mercator()
         .scale(2000)
@@ -91,10 +91,14 @@ function drawMap(rawdata){
 
     var path = d3.geo.path().projection(projection);
 
+    var div = d3.select("#vis").append("div")
+        .attr("class", "tooltip")               
+        .style("opacity", 0);
+
     d3.json("data/ontario.geojson", drawOntario)
 
     queue()
-        .defer(d3.csv, 'data/enrolment-by-grade/2011-2012/elementary.csv', function(d){ rateById.set(d["Board Number"].substring(1), +d["Total Enrolment"]);})
+        .defer(d3.csv, 'data/enrolment-by-grade/2011-2012/elementary.csv', function(d){ rateById.set(d["Board Number"], +d["Total Enrolment"]);})
         .await(ready);
     function ready(error, on){
         
@@ -105,16 +109,29 @@ function drawMap(rawdata){
 
         var areas = group.append("path")
             .attr("d", path)
-            .attr("class", function(d) {return quantize(rateById.get(d.properties.DSB_NUMBER));});
+            .attr("class", function(d) {return quantize(rateById.get('B'+d.properties.DSB_NUMBER));});
 
         areas.on('mouseover', function(d,i){
+            d3.select(this)
+                .transition().duration(300).style("opacity",1);
+               div.transition().duration(300)
+                .style("opacity", 0.9)
+               div.text(d.properties.NAME)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY -30) + "px");
+            
             d3.select(this.parentNode.appendChild(this))
-                //.attr("fill", "orange");
-                //console.log(this);
                 .style({'fill-opacity':1,'stroke':'#F00'});
+                
         })
 
         areas.on('mouseout', function(d,i){
+            d3.select(this)
+                .transition().duration(300)
+                .style("opacity", 0.8);
+               div.transition().duration(300)
+                .style("opacity", 0);
+            
             d3.select(this.parentNode.appendChild(this))
                 //.attr("fill", "steelblue");
                 .style({'fill-opacity':1,'stroke':'none'});
@@ -232,7 +249,7 @@ function enrolChart(geoData, eleData, secData){
 }
 
 function selectDistrict(geoData,i){
-    //console.log(districtData);
+    console.log("Selected District" + geoData.properties.NAME);
     
     //removes previous chart
     d3.select("#enrol").select("svg").remove();
