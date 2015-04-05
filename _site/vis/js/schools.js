@@ -1,4 +1,6 @@
 var svg, enrol;
+var type = 'enrolment';
+var year = '2011-2012';
 //var height = 1500
 //var width = 600
 
@@ -20,6 +22,12 @@ function init(){
 }
 
 function updateClicked(){
+   
+    d3.select("#enrol").select("svg").remove();
+
+    type = getSelectedDataType();
+    year = getSelectedYear();
+
     if(getSelectedLang() == 'English' && getSelectedType() == 'Public'){
         document.getElementById("title").innerHTML = "English Public School Districts";
     	d3.json("data/epublic.geojson", drawMap)
@@ -81,7 +89,7 @@ function drawMap(rawdata){
     var rateById = d3.map();
 
     var quantize = d3.scale.quantize()
-        .domain([0, 55000])
+        .domain([0, 180000])
         .range(d3.range(8).map(function(i){return "q" + i;}));
    
     var projection = d3.geo.mercator()
@@ -98,7 +106,7 @@ function drawMap(rawdata){
     d3.json("data/ontario.geojson", drawOntario)
 
     queue()
-        .defer(d3.csv, 'data/enrolment-by-grade/2011-2012/elementary.csv', function(d){ rateById.set(d["Board Number"], +d["Total Enrolment"]);})
+        .defer(d3.csv, 'data/'+type+'/'+year+'/'+type+'.csv', function(d){ rateById.set(d["Board Number"], +d["Total Enrolment"]);})
         .await(ready);
     function ready(error, on){
         
@@ -160,7 +168,7 @@ function drawMap(rawdata){
         .text(function (d) {return d.properties.NAME; });*/
 }
 
-function enrolChart(geoData, eleData, secData){ 
+function enrolChart(geoData, enrolData){ 
    
         var margin = {top: 80, right: 80, bottom: 80, left: 80},
         width = 700 - margin.left - margin.right,
@@ -189,31 +197,15 @@ function enrolChart(geoData, eleData, secData){
         .scale(y)
         .orient("left");
 
-    var eleGradeTitles = d3.keys(eleData).filter(function(key) {return key !== "Board Number" && key !== "Board Name" && key !== "Total Enrolment";});
-    
-    var secGradeTitles = d3.keys(secData).filter(function(key) {return key !== "Board Number" && key !== "Board Name" && key !== "Total Enrolment";});
+    var gradeTitles = d3.keys(enrolData).filter(function(key) {return key !== "Board Number" && key !== "Board Name" && key !== "Total Enrolment" && key !== "Total Elementary" && key !== "Total Secondary";});
 
-    console.log(secGradeTitles); 
-    var gradeTitles = eleGradeTitles.concat(secGradeTitles);
-    console.log(gradeTitles); 
 
-    eleData.grades = eleGradeTitles.map(function(name){
-        return {name: name, value: +eleData[name]}; 
+    enrolData.grades = gradeTitles.map(function(name){
+        return {name: name, value: +enrolData[name]}; 
     });
-    
-    secData.grades = secGradeTitles.map(function(name){
-        return {name: name, value: +secData[name]}; 
-    }); 
-    console.log(eleData.grades); 
-    console.log(secData.grades);
-
-    var grades = eleData.grades.concat(secData.grades);
-
-    console.log(grades); 
-
     //x.domain(gradeTitles).rangeRoundBands([25, 700]);
     x.domain(gradeTitles);
-    y.domain([0, d3.max(grades, function(d) {return d.value;} )]);
+    y.domain([0, d3.max(enrolData.grades, function(d) {return d.value;} )]);
 
     enrol.append("g")
         .attr("class","x axis")
@@ -237,8 +229,16 @@ function enrolChart(geoData, eleData, secData){
         .style("text-anchor", "end")
         .text("Number of Student Enrolled");
 
+    enrol.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text(year+' '+type);
+
     enrol.selectAll("rect")
-        .data(grades)
+        .data(enrolData.grades)
         .enter().append("rect")
         .attr("class", "bar")
         .attr("x", function(d){return x(d.name);})
@@ -254,30 +254,16 @@ function selectDistrict(geoData,i){
     //removes previous chart
     d3.select("#enrol").select("svg").remove();
 
-    d3.csv('data/enrolment-by-grade/2011-2012/elementary.csv', function(d){
+    d3.csv('data/'+type+'/'+year+'/'+type+'.csv', function(d){
         d.forEach(function(d){
-            //console.log(d["Board Number"]);
             //Map data does not have a B infront of the district number but it is the same number
             if(d["Board Number"] == 'B'+geoData.properties.DSB_NUMBER){
-                
-                d3.csv('data/enrolment-by-grade/2011-2012/secondary.csv', function(c){
-                    c.forEach(function(b){
-                        if(b["Board Number"] == 'B'+geoData.properties.DSB_NUMBER){
-                            console.log("Secondary: " + b["Board Name"]);
-                            console.log("Elementary: " + d["Board Name"]); 
-                            enrolChart(geoData, d, b);
-                        }
-                    });
-                });
-                //console.log("CSV: " + d["Board Name"]);
+                console.log("Elementary: " + d["Board Name"]); 
+                enrolChart(geoData, d);
                 //console.log("GEOJSON: " + geoData.properties.NAME);
-                //enrolChart(geoData, d);   
             }
         });
-        //console.log(d[i]["Board Name"]);
-        //console.log(districtData); 
     });
-
 }
 
 function getSelectedLang(){
@@ -290,4 +276,13 @@ function getSelectedType(){
     var i = node.selectedIndex
     return node[i].value
 }
-
+function getSelectedYear(){
+    var node = d3.select('#yeardropdown').node()
+    var i = node.selectedIndex
+    return node[i].value
+}
+function getSelectedDataType(){
+    var node = d3.select('#datadropdown').node()
+    var i = node.selectedIndex
+    return node[i].value
+}

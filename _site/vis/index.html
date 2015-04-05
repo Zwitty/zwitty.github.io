@@ -88,32 +88,47 @@
 <h2 id="title">English Public School Districts</h2>
 
 <div style="margin:100;">
-	<div style="display: table-cell; width: 100;">
-		<label for="langdropdown">Language: </label>
-		<select id="langdropdown">
-			<option val="english">English</option>
-			<option val="french">French</option>
-		</select>
-	</div>
-	<div style="display: table-cell; width: 150; padding: 30px;">
-		<label for="typedropdown">District Type: </label>
-		<select id="typedropdown">
-			<option val="public">Public</option>
-			<option val="catholic">Catholic</option>
-		</select>
-	</div>
-	<div style="display: table-cell; width: 150;">
-		<button id="update" onclick="updateClicked()">Update</button>
-	</div>
-    <div id="data-type-wrapper">
-        <button id="type-enrolment" onclick="enrolClicked()">Enrolment</button>
-        <button id="type-language" onclick="langClicked()">French Language</button>
+    <div style="display: table-cell; width: 100;">
+        <label for="langdropdown">Language: </label>
+        <select id="langdropdown">
+            <option val="english">English</option>
+            <option val="french">French</option>
+        </select>
+    </div>
+    <div style="display: table-cell; width: 150; padding: 30px;">
+        <label for="typedropdown">District Type: </label>
+        <select id="typedropdown">
+            <option val="public">Public</option>
+            <option val="catholic">Catholic</option>
+        </select>
+    </div>
+    <!--<div style="display: table-cell; width: 150;">
+        <button id="update" onclick="updateClicked()">Update</button>
+    </div>-->
+</div>
+<div style="margin:100;">
+    <div style="display: table-cell; width: 100;">
+        <label for="yeardropdown">Academic Year: </label>
+        <select id="yeardropdown">
+            <option val="2011-2012">2011-2012</option>
+            <option val="2012-2013">2012-2013</option>
+        </select>
+    </div>
+    <div style="display: table-cell; width: 150; padding: 30px;">
+        <label for="datadropdown">Data Type: </label>
+        <select id="datadropdown">
+            <option val="enrolment">Enrolment</option>
+            <option val="french">French Language</option>
+        </select>
+    </div>
+    <div style="display: table-cell; width: 150;">
+        <button id="update" onclick="updateClicked()">Update</button>
     </div>
 </div>
 <div id="vis"><div id="on"></div></div>
 <div id="enrol"></div>
 <script type="text/javascript">
-	init();
+    init();
 </script>
 
 		</div>
