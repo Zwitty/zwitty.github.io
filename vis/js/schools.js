@@ -170,11 +170,11 @@ function drawMap(rawdata){
 
 function enrolChart(geoData, enrolData){ 
    
-        var margin = {top: 80, right: 80, bottom: 80, left: 80},
+    var margin = {top: 80, right: 80, bottom: 180, left: 80},
         width = 700 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        height = 600 - margin.top - margin.bottom;
 
-    var enrol = d3.select("#enrol").append("svg")
+    enrol = d3.select("#enrol").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
