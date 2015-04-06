@@ -89,7 +89,7 @@ function drawMap(rawdata){
     var rateById = d3.map();
 
     var quantize = d3.scale.quantize()
-        .domain([0, 180000])
+        .domain([0, 80000])
         .range(d3.range(8).map(function(i){return "q" + i;}));
    
     var projection = d3.geo.mercator()
@@ -124,7 +124,12 @@ function drawMap(rawdata){
                 .transition().duration(300).style("opacity",1);
                div.transition().duration(300)
                 .style("opacity", 0.9)
-               div.text(d.properties.NAME)
+               div.html(
+                    d.properties.NAME
+                    +'</br>'+
+                    '<b>Number of Students:</b> '+rateById.get('B'+d.properties.DSB_NUMBER)
+                    +'</br>'+
+                    d.properties.WEBSITE)
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY -30) + "px");
             
@@ -206,6 +211,7 @@ function enrolChart(geoData, enrolData){
     //x.domain(gradeTitles).rangeRoundBands([25, 700]);
     x.domain(gradeTitles);
     y.domain([0, d3.max(enrolData.grades, function(d) {return d.value;} )]);
+    //y.domain([0, 28000]);
 
     enrol.append("g")
         .attr("class","x axis")
