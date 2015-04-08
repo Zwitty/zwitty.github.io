@@ -87,12 +87,8 @@ function drawMap(rawdata){
     svg.selectAll("*").remove();
     
     var rateById = d3.map();
-
-    var quantize = d3.scale.quantize()
-        .domain([0, 80000])
-        .range(d3.range(8).map(function(i){return "q" + i;}));
-   
-    var projection = d3.geo.mercator()
+    
+        var projection = d3.geo.mercator()
         .scale(2000)
         .translate([3250, 2050])
         .precision(.1);
@@ -110,6 +106,16 @@ function drawMap(rawdata){
         .await(ready);
     function ready(error, on){
         
+        //d3.max(enrolData.grades, function(d) {return d.value;} )]
+        //maxDataSetValue = d3.max(d3.values(rateById), function(d){return d.value});
+        //maxDataSetValue = d3.max(d3.values(rateById));
+        var maxDataSetValue = d3.max(rawdata.features, function(d){return rateById.get('B'+d.properties.DSB_NUMBER);});
+
+        var quantize = d3.scale.quantize()
+            .domain([0, d3.max(rawdata.features, function(d){return rateById.get('B'+d.properties.DSB_NUMBER);})])
+            .range(d3.range(15).map(function(i){return "q" + i;}));
+   
+   
         var group = svg.selectAll("#vis")
             .data(rawdata.features)
             .enter()
@@ -185,6 +191,11 @@ function enrolChart(geoData, enrolData){
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
+    var div = d3.select("#enrol").append("div")
+        .attr("class", "tooltip")               
+        .style("opacity", 0);
+
+
     
 
     var x = d3.scale.ordinal()
@@ -250,7 +261,29 @@ function enrolChart(geoData, enrolData){
         .attr("x", function(d){return x(d.name);})
         .attr("width", 30)
         .attr("y", function(d){return y(d.value);})
-        .attr("height", function(d) { return height - y(d.value); });
+        .attr("height", function(d) { return height - y(d.value); })
+        
+        .on('mouseover', function(d,i){
+            d3.select(this)
+                .transition().duration(300).style("opacity",1);
+               div.transition().duration(300)
+                .style("opacity", 0.9)
+               div.html(
+                    geoData.properties.NAME
+                    +'</br>'+
+                    '<b>Number of Students:</b> '+ d.value
+                    )
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY -30) + "px");
+        })
+
+        .on('mouseout', function(d,i){
+            d3.select(this)
+                .transition().duration(300)
+                .style("opacity", 0.8);
+               div.transition().duration(300)
+                .style("opacity", 0);
+        });
 
 }
 

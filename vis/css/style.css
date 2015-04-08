@@ -27,11 +27,40 @@ div.tooltip {
     pointer-events: none;         
 } 
 
-.q0 { fill:rgb(222,235,247); }
-.q1 { fill:rgb(198,219,239); }
-.q2 { fill:rgb(158,202,225); }
-.q3 { fill:rgb(107,174,214); }
-.q4 { fill:rgb(66,146,198); }
-.q5 { fill:rgb(33,113,181); }
-.q6 { fill:rgb(8,81,156); }
-.q7 { fill:rgb(8,48,107); }
+.q0  { fill:rgb(102,0,0); }
+.q1  { fill:rgb(153,0,0); }
+.q2  { fill:rgb(204,0,0); }
+.q3  { fill:rgb(255,0,0); }
+.q4  { fill:rgb(255,51,51); }
+.q5  { fill:rgb(255,102,102); }
+.q6  { fill:rgb(255,153,153); }
+.q7  { fill:rgb(255,204,204); }
+.q8  { fill:rgb(204,229,255); }
+.q9  { fill:rgb(153,204,255); }
+.q10 { fill:rgb(102,178,255); }
+.q11 { fill:rgb(51,153,255); }
+.q12 { fill:rgb(0,128,255); }
+.q13 { fill:rgb(0,102,204); }
+.q14 { fill:rgb(0,76,153); }
+.q15 { fill:rgb(0,51,102); }
+
+/*
+.q0 { fill:rgb(153,0,0); }
+.q1 { fill:rgb(204,0,0); }
+.q2 { fill:rgb(255,51,51); }
+.q3 { fill:rgb(255,102,102); }
+.q4 { fill:rgb(102,102,255); }
+.q5 { fill:rgb(51,51,255); }
+.q6 { fill:rgb(0,0,255); }
+.q7 { fill:rgb(0,0,204); }
+.q8 { fill:rgb(0,0,153); }*/
+/*
+.q0 { fill:rgb(247,251,255); }
+.q1 { fill:rgb(222,235,247); }
+.q2 { fill:rgb(198,219,239); }
+.q3 { fill:rgb(158,202,225); }
+.q4 { fill:rgb(107,174,214); }
+.q5 { fill:rgb(66,146,198); }
+.q6 { fill:rgb(33,113,181); }
+.q7 { fill:rgb(8,81,156); }
+.q8 { fill:rgb(8,48,107); }*/
