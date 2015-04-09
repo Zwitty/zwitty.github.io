@@ -131,11 +131,33 @@
 <div id="vis"><div id="on"></div></div>
 <div id="enrol"></div>
 
-<!-- Start Actual Writing  -->
+<!-- Writing  -->
+<h1>The Visualization</h1>
+<p>The purpose of this visualization is to show the relationship of the number of students enrolled in each district based on Enrolment, Gender and French Language courses.  For this visualization only two academic years are available 2011-2012 and 2012-2013.</p>
+<p>The visualization was creating using the <a href="http://d3js.org/" target="blank">D3.js</a> library.</p>
 
+<h2>How to Use</h2>
+<p>Once loaded you are presented with four options and a button, the four default options are to view english public school districts by enrolment for the 2011-2012 academic year.  Before selecting update a map of Southern Ontario is displayed, this is where the school districts will be loaded.</p>
+<p>After making your selection a choropleth map is displayed showing the data type going from the smallest value (red), to the largest value (blue).  As expected the Toronto district school board has the most number of students enrolled.</p>
+<p>By hovering over different school districts a box will be shown that will display the school district name, the number of students enroled in the district and the website for that district.  Once you have visited that district the saturation will decrease to let you know you have visited it.</p>
+<p>If a district is clicked a barchart will allow you to see additional information about the school district, each data type shows different types of information.  For example if the data type is enrolment a barchart showing the number of students in each grade will appear.  Hovering over the bars of the barchart will display another box showing the district name and exact number of students enrolled.  Again after hovering the saturation will decrease to let you know you have visited it.</p>
 
+<h2>The Data</h2>
+<p>For this visualization there are two types of data being used, the first is the boudary definitions for Ontario and the school districts and the second is the enrolment data for the four types of data.</p>
+<h3>Boundary Files</h3>
+<p>The first boudary file is Ontario, this file is provided as a Shapefile that can be used with propritary software.  In order to use this file with <a href="http://d3js.org/" target="blank">D3.js</a> it needed to be converted to the geoJSON format, after that was complete it could then be displayed.i</p>
+<p>The source of the Ontario Boundary file can be found  <a href="https://www.javacoeapp.lrc.gov.on.ca/geonetwork/srv/en/main.home?uuid=0b975965-7325-414f-ac8d-dd3981a9cbe4" target="blank">here</a>, this is hosted by the Ontario government and needs to be requested.</p>
+<p>The other four banday files also needed to be converted and contain the boundary information for the four types of school districts.  The source of the four types of school districts can be found  <a href="http://maps.library.utoronto.ca/cgi-bin/files.pl?idnum=1513&title=Ontario+School+Boards+Boundary+File" target="blank">here</a>, this is hosted by the University of Toronto.</p>
+<h3>Data Files</h3>
+<p>The data files that drive this visualization are all contained on the Ontario Open Data website.  In order to use this data in this visualization the data first needed to be converted into CSV format, this was done using Microsoft Excel.  It is also worth noting that some of the headers were also changed to be more concise in the visualization. In total there are four data files.</p>
+<p>There are two files that drive the Enrolment visualization.  Enrolment by grade for elementary schools which can be found <a href="https://www.ontario.ca/data/enrolment-grade-elementary-schools" target="blank">here</a> and enrolment by grade for secondary schools, which can be found <a href="https://www.ontario.ca/data/enrolment-grade-secondary-schools" target="blank">here</a>.  These two files were merged to become one file that contained both elementary and secondary, one interesting find about this data is that some districts only have elementary schools with no secondary and some have only secondary.</p>
+<p>For the language data type we can see three types of french enrolment, core, extended and immersion.  This data contained both elementary and secondary schools without the need to change it, some headers were still changed however. The data for this can be found <a href="https://www.ontario.ca/data/french-second-language-enrolment" target="blank">here</a>.</p>
+<p>While we have two selection for gender they both come from the same dataset, by selecting each gender only the choropleth map will change showing the total number of the selected gender enroled.  This data can be found <a href="https://www.ontario.ca/data/school-enrolment-gender" target="blank">here</a>.</p>
 
-<!-- End Actual Writing -->
+<h2>Missing Data</h2>
+<p>While using the visualization you may notice that the choropleth map may be black instead of red or blue, this indicated that there is no data for this district.  to view this the French Public school board has no data for any of it's districts.  I left these in the visualization because the missing data will still tell interesting stories.</p>
+
+<!-- End Writing -->
 <script type="text/javascript">
     init();
 </script>
