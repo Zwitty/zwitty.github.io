@@ -25,6 +25,9 @@ function updateClicked(){
    
     d3.select("#enrol").select("svg").remove();
 
+    d3.select("#scale")
+        .style("visibility","visible");
+
     type = getSelectedDataType();
     year = getSelectedYear();
 

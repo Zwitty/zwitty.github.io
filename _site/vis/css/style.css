@@ -1,3 +1,7 @@
+#scale{
+    visibility: hidden;
+}
+
 .axis text{
     font 10px sans serif;
 }
