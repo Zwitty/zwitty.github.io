@@ -5,7 +5,7 @@ permalink: /
 ---
 # About
 
-My name is Matthew Clark.  I am currently working on obtaining my bachelor's degree in Computer Science at the [University of Ontario Institute of Technology (UOIT)][1].  I am currently living in the Greater Toronto Area in Canada.
+My name is Matthew Clark.  I am recent graduate in Computer Science from the [University of Ontario Institute of Technology (UOIT)][1].  I am currently living in the Greater Toronto Area in Canada.
 
 I have a passion for new technology and enjoy discussing new trends with anybody.  My focus when trying to create new software and technology is education technology, I would like to work on software that will be used in classrooms to improve the learning environment. 
 
