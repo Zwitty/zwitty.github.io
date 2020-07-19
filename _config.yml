@@ -1,47 +1,48 @@
-# your informations
+# Setup
+title: Matthew Clark
+description: Thoughts and writings about technology by Matthew Clark.
+tagline: Thoughts and writings about technology by Matthew Clark.
+url: https://matthewclark.ca
+baseurl: /
+permalink: pretty
+
+# Dependencies
+highlighter:      pygments
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate: 5
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - backup/
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
 author:
   name: Matthew Clark
-  description: Computer Scientist
-  picture: /assets/images/Clark-Matthew.jpg
+  url: https://twitter.com/MatthewThoClark
+  email: matthew@matthewclark.ca
+  picture: /assets/images/Matthew-Clark-min.jpg
 
-# site description
-description: Thoughts and writings about technology by Matthew Clark.
-
-# site url
-url: http://matthewclark.ca
-
-# site title
-title: Matthew Clark
-
-# site version
-version: 1.0.0
-
-# number of posts per page
-paginate: 10
-paginate_path: "/blog/page:num/"
-
-# your github username
-github_username: Zwitty
-
-# set true to include or false to exclude share option
-share:
-  twitter: true
-  facebook: true
-  google_plus: true
-  linkedin: true
-  disqus: true
-
-# if share.facebook is true, provide your facebook app id
-facebook_app_id: 1550934121853744
-
-# if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
-disqus_username: MatthewThoClark
-disqus_api_key: r1Jo5nNACee32bU3xtpCDmwzlr6M9CON8Wx0cKMDPrqGbrLgPgv8TUS6d56xuLlz 
-disqus_recent_comments_to_display: 5
-
-# google analytics ID
-google_analytics_id: UA-58186085-1
-
-markdown: kramdown
-highlighter: pygments
-exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
+# Custom vars
+version: 2.0.0
