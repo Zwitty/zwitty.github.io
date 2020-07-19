@@ -2,6 +2,9 @@
 layout: page
 title: About
 ---
+
+![Matthew Clark Jungfraujoch](/assets/images/matthew-clark-mountain.jpg "Matthew Clark Jungfraujoch")
+
 My name is Matthew Clark.  I am a graduate in Computer Science from [Ontario Tech University][1] formally University of Ontario Institute of Technology.  I am currently living in the Greater Toronto Area in Canada.
 
 I have a passion for new technology and enjoy discussing new trends with anybody.  My focus when trying to create new software and technology is DevOps, I love solving problems on how to run ecosystems and building technology for developers. 
