@@ -1,0 +1,47 @@
+# your informations
+author:
+  name: Matthew Clark
+  description: Computer Scientist
+  picture: /assets/images/Clark-Matthew.jpg
+
+# site description
+description: Thoughts and writings about technology by Matthew Clark.
+
+# site url
+url: http://matthewclark.ca
+
+# site title
+title: Matthew Clark
+
+# site version
+version: 1.0.0
+
+# number of posts per page
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# your github username
+github_username: Zwitty
+
+# set true to include or false to exclude share option
+share:
+  twitter: true
+  facebook: true
+  google_plus: true
+  linkedin: true
+  disqus: true
+
+# if share.facebook is true, provide your facebook app id
+facebook_app_id: 1550934121853744
+
+# if share.disqus is true, provide your disqus shortname, the api key and the number of comments to display
+disqus_username: MatthewThoClark
+disqus_api_key: r1Jo5nNACee32bU3xtpCDmwzlr6M9CON8Wx0cKMDPrqGbrLgPgv8TUS6d56xuLlz 
+disqus_recent_comments_to_display: 5
+
+# google analytics ID
+google_analytics_id: UA-58186085-1
+
+markdown: kramdown
+highlighter: pygments
+exclude: [ 'README.md', 'src/', 'node_modules', 'bower_components', 'package.json', 'bower.json', 'Gruntfile.js' ]
