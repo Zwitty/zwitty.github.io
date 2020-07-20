@@ -1,58 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-0e">
 
-    {% include header.html %}
+    {% include sidebar.html %}
 
-    <div id="page-wrap">
-        <div id="page-content">
-            <div id="content">
-                {{ content }}
-            </div>
-            <aside class="visible-lg-block">
-                  <section>
-
-                    <h3>Recent Posts</h3>
-
-                    <ul>
-                    {% for post in site.posts limit:5 %}
-                    <li>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                    </ul>
-				
-					<hr>
-
-					<a class="twitter-timeline" href="https://twitter.com/MatthewThoClark" data-widget-id="578631640152436736">Tweets by @MatthewThoClark</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-                  </section>
-                  <!-- recent posts -->
-
-                  {% if site.share.disqus %}
-                  <section id="recent-comments-section">
-
-                    <h3>Recent Comments</h3>
-
-                  </section>
-                  <!-- recent comments -->
-                  {% endif %}
-            </aside>
-            <div style="clear: both"></div>
-        </div>
+    <div class="content container">
+      {{ content }}
     </div>
 
-    {% if site.share.twitter or site.share.facebook or site.share.google_plus or site.share.linkedin or site.share.disqus %}
-    <script src="/assets/{{ site.github_username }}-{{ site.version }}.js"></script>
-    {% endif %}
-
-
-    </script>
-
   </body>
-
 </html>
