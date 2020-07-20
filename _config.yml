@@ -40,9 +40,12 @@ sass:
 # Specify the author for blog posts
 author:
   name: Matthew Clark
-  url: https://twitter.com/MatthewThoClark
+  url: https://matthewclark.ca
   email: matthew@matthewclark.ca
   picture: /assets/images/Matthew-Clark-min.jpg
+  linkedin: https://www.linkedin.com/in/matthewthoclark
+  twitter: https://twitter.com/MatthewThoClark
+  github: https://github.com/Zwitty/
 
 # Custom vars
 version: 2.0.0
