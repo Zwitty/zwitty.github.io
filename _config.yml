@@ -3,7 +3,8 @@ title: Matthew Clark
 description: Thoughts and writings about technology by Matthew Clark.
 tagline: Thoughts and writings about technology by Matthew Clark.
 url: https://matthewclark.ca
-baseurl: /
+baseurl: "/"
+url: "/"
 permalink: pretty
 
 # Dependencies
