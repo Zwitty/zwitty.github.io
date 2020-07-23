@@ -1,0 +1,16 @@
+.title {
+    color: #aa759f;
+    float: left;
+}
+.date {
+    color: #aa759f;
+    float: right;
+}
+.social {
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+}
+.social-icon {
+    padding: 10px;
+}
